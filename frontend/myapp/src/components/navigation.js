@@ -1,18 +1,25 @@
-// Navigation.js
+import React, { useState, useEffect } from 'react';
+import "./firstpage_css.css";
+import { Link } from "react-scroll";
 
-import React from "react";
+const Navigation = () => {
 
-function Navigation() {
+
   return (
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="#Project">Projects</a></li>
-        <li><a href="#contact">Start A Project</a></li>
-
+        <li>
+          <Link to="First_Page" activeClass="active" spy={true} smooth={true}  duration={50}>Home</Link>
+        </li>
+        <li>
+          <Link to="Second_Page" activeClass="active" spy={true} smooth={true}  duration={50} >Projects</Link>
+        </li>
+        <li>
+          <Link to="Third_Page" activeClass="active" spy={true} smooth={true}  duration={50} >Start A Project</Link>
+        </li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Navigation;
