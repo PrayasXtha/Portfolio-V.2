@@ -6,12 +6,12 @@
 
 #First_Page{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 
     width: 100%;
     height: 100vh;
-    background-color: rgb(159, 255, 255);
+
 }
 
 #Right_Content{
@@ -19,26 +19,82 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+  
+    
     height: 100vh;
+    width: 70%;
     padding: 2%;
+}
+
+#context{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    flex: 2;
+    padding: 1%;
+
+}
+#context h1{
+    font-size: 80px;
+    font-weight: 1000;
+}
+#context h2{
+    font-size: 55px;
+    font-weight: 700;
+}
+#context span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#context p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#context_pic{
+    display: flex;
+
+    flex: 1.5;
+}
+#context_pic img{
+    width: 100%;
 }
 
 #Navigation{
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     left: 2%;
-    top: 40%;
+    top: 25%;
     width: 30%;
     z-index: 999; /* Ensure navigation stays on top */
 
 }
+.navlogo{
+    display: flex;
+    width: 50%;
 
+ 
+}
 nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
 }
+nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
 nav li .active{
+
     font-size: 50px;
     font-weight: 800;
 }
@@ -57,15 +113,39 @@ nav li .active{
     width: 100%;
     height: 100vh;
     background-color: rgb(3, 119, 119);
+
+  
 }
 
 #Third_Page{
 
     width: 100%;
- height: 100vh;
- background-color: rgb(1, 42, 42);
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 1200px ;
+    display: flex;
+    justify-content: right;
 
 }
 section {
     scroll-margin-top: 50px; /* Adjust margin top based on your navigation height */
+  }
+
+
+  .blink {
+    animation: blink 0.5s infinite;
+  }
+  @keyframes blink{
+    to { opacity: .0; }
+  }
+  .flex {
+      display: flex;
+  }
+  .header-sub-title {
+    color: #000000;
+    font-family: "Courier";
+    font-size: 30px;
+    padding: 0.1em;
   }

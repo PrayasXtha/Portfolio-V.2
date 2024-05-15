@@ -1,6 +1,6 @@
 
 import './App.css';
-import FirstPage from './components/firstPage';
+import FirstPage from '../src/components/firstPage';
 
 function App() {
   return (
