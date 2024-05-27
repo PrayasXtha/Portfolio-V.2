@@ -1,151 +1,260 @@
 *{
-     margin: 0%;
-     box-sizing: border-box;
-    scroll-behavior: smooth;
+    margin: 0%;
+    box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+
+#social {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  margin-left: 1%;
+  z-index: 99;
+  transition: left 1s ease-in-out; /* Transition only the left property */
+  left: 50%; /* Initial position */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+#social.scrolled {
+
+    justify-content: flex-start;
+    margin-left: 7%;
+    left: 0%;
+    transform: translateX(0%); /* Align to the left */
+}
+
+.social_links {
+  font-size: 30px;
+  margin: 10px;
+}
+  .social_links {
+    font-size: 30px;
+    margin: 10px;
+  }
+  
+  .social_links {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+
+.social_links{ 
+   font-size: 30px;
+   margin: 10px;
+ 
+}
+
+#socials_fb :hover{
+   color: blue;
+}
+#socials_insta :hover{
+   background: linear-gradient( #f9ce34,  #ee2a7b, #6228d7);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-fill-color: transparent;
+   /* Add any other styles you need for the icon */
+}
+#socials_git:hover{
+   color: #878787;
+}
+#socials_linkedin:hover{
+   color: #0A66C2;
+}
+
+
+#pp{
+   width: 75px;
+   height: 75px;
+   border-radius: 50px;
 }
 
 #First_Page{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-
-    width: 100%;
-    height: 100vh;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
 
 }
 
 #Right_Content{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+   height: 100vh;
+   width: 70%;
+   padding: 2%;
 
-  
-    
-    height: 100vh;
-    width: 70%;
-    padding: 2%;
 }
 
 #context{
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    flex: 2;
-    padding: 1%;
+   border-left: 8px black solid   ;
+   border-radius: 20px;
+   display: flex;
+   text-align: left;
+   flex-direction: column;
+   flex: 2;
+   padding: 2%;
 
 }
 #context h1{
-    font-size: 80px;
-    font-weight: 1000;
+   font-size: 50px;
+   font-weight: 1000;
 }
 #context h2{
-    font-size: 55px;
-    font-weight: 700;
+   font-size: 25px;
+   font-weight: 700;
 }
 #context span{
-    font-size: 20px;
-    font-weight: 500;
+   font-size: 15px;
+   font-weight: 500;
 }
 
 #context p{
-    font-size: 20px;
-    font-weight: 500;
+   font-size: 15px;
+   font-weight: 500;
 }
 #context_pic{
-    display: flex;
+   display: flex;
 
-    flex: 1.5;
+   background-size: contain;
+   background-repeat: no-repeat;
+   flex: 1.5;
 }
 #context_pic img{
-    width: 100%;
+   width: 100%;
+}
+#my_qualities {
+ font-size: 15px;
+
 }
 
+#my_qualities  li{
+   display: inline-block;
+
+   width: 250px;
+   height: 40px;
+   margin: 3px;        
+   padding: 1.5%;
+   background-color: rgb(53, 53, 53);
+   color: rgb(255, 255, 255);
+    border-radius: 8px;
+
+}
+#my_qualities  li i{
+
+   background-color: white;
+   padding: 2.5%;
+   border-radius: 20px;
+   margin-right: 1%;
+}
+
+
 #Navigation{
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 2%;
-    top: 25%;
-    width: 30%;
-    z-index: 999; /* Ensure navigation stays on top */
+
+ 
+   
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 30%;
+   height: 100%;
+   z-index: 999; /* Ensure navigation stays on top */
 
 }
 .navlogo{
-    display: flex;
-    width: 50%;
+   display: flex;
+   width: 30%;
 
- 
+
 }
 nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
 }
 nav li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
 
 }
 nav li .active{
 
-    font-size: 50px;
-    font-weight: 800;
+   font-size: 40px;
+   font-weight: 800;
 }
 
 
-#content_first{
 
-    display: flex;
-    margin-left: 31.25%;
-}
 
 
 
 #Second_Page{
 
+    display: flex;
+    justify-content: right;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: rgb(3, 119, 119);
 
-  
+   
+
+ 
+}
+#second_RC{
+
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   height: 90vh;
+   background-color: rgb(196, 196, 196);
+   border-radius: 20px;
 }
 
 #Third_Page{
 
-    width: 100%;
-    height: 100vh;
-    
-    background-repeat: no-repeat;
-    background-position: right ;
-    background-size: 1200px ;
     display: flex;
     justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+   
+
 
 }
-section {
-    scroll-margin-top: 50px; /* Adjust margin top based on your navigation height */
-  }
 
 
-  .blink {
-    animation: blink 0.5s infinite;
-  }
-  @keyframes blink{
-    to { opacity: .0; }
-  }
-  .flex {
-      display: flex;
-  }
-  .header-sub-title {
-    color: #000000;
-    font-family: "Courier";
-    font-size: 30px;
-    padding: 0.1em;
-  }
+
+ .blink {
+   animation: blink 0.5s infinite;
+ }
+ @keyframes blink{
+   to { opacity: .0; }
+ }
+ .flex {
+     display: flex;
+ }
+ .header-sub-title {
+   color: #000000;
+   font-family: "Courier";
+   font-size: 22px;
+   padding: 0.1em;
+ }
+
+ @keyframes  {
+    
+ }

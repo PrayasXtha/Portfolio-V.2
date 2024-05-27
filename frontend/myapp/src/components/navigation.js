@@ -15,8 +15,10 @@ const Navigation = () => {
         setActivePage('Home');
       } else if (scrollTop >= 1000 && scrollTop < 2000) { // Assuming each page is 100vh
         setActivePage('Projects');
+
       } else {
         setActivePage('Start A Project');
+       
       }
     };
     
@@ -43,21 +45,25 @@ const Navigation = () => {
     }
   };
 
-  return (
-    <nav>
+  return (    
+
+    <nav id="Navigation">
+        
       <img className='navlogo' alt="ecommerce" src={getImageForPage()} />
       <ul>
         <li>
-          <Link to="First_Page" activeClass="active" spy={true} smooth={true} duration={50}>Home</Link>
+          <Link to="First_Page" activeClass="active" spy={true} smooth={true} duration={100}>Home</Link>
         </li>
         <li>
-          <Link to="Second_Page" activeClass="active" spy={true} smooth={true} duration={50}>Projects</Link>
+          <Link to="Second_Page" activeClass="active" spy={true} smooth={true} duration={100}>Projects</Link>
         </li>
         <li>
-          <Link to="Third_Page" activeClass="active" spy={true} smooth={true} duration={50}>Start A Project</Link>
+          <Link to="Third_Page" activeClass="active" spy={true} smooth={true} duration={100}>Start A Project</Link>
         </li>
       </ul>
-    </nav>
+   
+    </nav>   
+
   );
 };
 
