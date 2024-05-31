@@ -1,260 +1,288 @@
-*{
-    margin: 0%;
-    box-sizing: border-box;
-   scroll-behavior: smooth;
-}
+   *{
+      margin: 0%;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+
+   }
 
 
-#social {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 20vh;
-  margin-left: 1%;
-  z-index: 99;
-  transition: left 1s ease-in-out; /* Transition only the left property */
-  left: 50%; /* Initial position */
-  transform: translateX(-50%); /* Center horizontally */
-}
-
-#social.scrolled {
-
-    justify-content: flex-start;
-    margin-left: 7%;
-    left: 0%;
-    transform: translateX(0%); /* Align to the left */
-}
-
-.social_links {
-  font-size: 30px;
-  margin: 10px;
-}
-  .social_links {
-    font-size: 30px;
-    margin: 10px;
-  }
-  
-  .social_links {
-    font-size: 30px;
-    margin: 10px;
-  }
-
-
-.social_links{ 
-   font-size: 30px;
-   margin: 10px;
- 
-}
-
-#socials_fb :hover{
-   color: blue;
-}
-#socials_insta :hover{
-   background: linear-gradient( #f9ce34,  #ee2a7b, #6228d7);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-clip: text;
-   text-fill-color: transparent;
-   /* Add any other styles you need for the icon */
-}
-#socials_git:hover{
-   color: #878787;
-}
-#socials_linkedin:hover{
-   color: #0A66C2;
-}
-
-
-#pp{
-   width: 75px;
-   height: 75px;
-   border-radius: 50px;
-}
-
-#First_Page{
-   display: flex;
-   justify-content: right;
-   align-items: center;
-   width: 100%;
-   height: 100vh;
-
-}
-
-#Right_Content{
-
-   display: flex;
-   justify-content: center;
-   align-items: center;  
-   height: 100vh;
-   width: 70%;
-   padding: 2%;
-
-}
-
-#context{
-   border-left: 8px black solid   ;
-   border-radius: 20px;
-   display: flex;
-   text-align: left;
-   flex-direction: column;
-   flex: 2;
-   padding: 2%;
-
-}
-#context h1{
-   font-size: 50px;
-   font-weight: 1000;
-}
-#context h2{
-   font-size: 25px;
-   font-weight: 700;
-}
-#context span{
-   font-size: 15px;
-   font-weight: 500;
-}
-
-#context p{
-   font-size: 15px;
-   font-weight: 500;
-}
-#context_pic{
-   display: flex;
-
-   background-size: contain;
-   background-repeat: no-repeat;
-   flex: 1.5;
-}
-#context_pic img{
-   width: 100%;
-}
-#my_qualities {
- font-size: 15px;
-
-}
-
-#my_qualities  li{
-   display: inline-block;
-
-   width: 250px;
-   height: 40px;
-   margin: 3px;        
-   padding: 1.5%;
-   background-color: rgb(53, 53, 53);
-   color: rgb(255, 255, 255);
-    border-radius: 8px;
-
-}
-#my_qualities  li i{
-
-   background-color: white;
-   padding: 2.5%;
-   border-radius: 20px;
-   margin-right: 1%;
-}
-
-
-#Navigation{
-
- 
-   
+   #social {
    position: fixed;
    display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 30%;
-   height: 100%;
-   z-index: 999; /* Ensure navigation stays on top */
+   width: 100%;
+   height: 20vh;
+   margin-left: 1%;
+   z-index: 99;
+   transition: left 1s ease-in-out; /* Transition only the left property */
+   left: 50%; /* Initial position */
+   transform: translateX(-50%); /* Center horizontally */
+   }
 
-}
-.navlogo{
-   display: flex;
-   width: 30%;
+   #social.scrolled {
 
-
-}
-nav{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   font-size: 20px;
-}
-nav li{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   cursor: pointer;
-
-}
-nav li .active{
-
-   font-size: 40px;
-   font-weight: 800;
-}
-
-
-
-
-
-
-#Second_Page{
-
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-
-   
-
- 
-}
-#second_RC{
-
-   box-sizing: border-box;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   overflow: hidden;
-   height: 90vh;
-   background-color: rgb(196, 196, 196);
-   border-radius: 20px;
-}
-
-#Third_Page{
-
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-   
-
-
-}
-
-
-
- .blink {
-   animation: blink 0.5s infinite;
- }
- @keyframes blink{
-   to { opacity: .0; }
- }
- .flex {
-     display: flex;
- }
- .header-sub-title {
-   color: #000000;
-   font-family: "Courier";
-   font-size: 22px;
-   padding: 0.1em;
- }
-
- @keyframes  {
+      justify-content: flex-start;
+      margin-left: 7%;
+      left: 0%;
+      transform: translateX(0%); /* Align to the left */
     
- }
+      z-index: 1000; /* Ensure the element is on top */
+   }
+
+   .social_links {
+   font-size: 30px;
+   margin: 10px;
+   }
+   .social_links {
+      font-size: 30px;
+      margin: 10px;
+   }
+   
+   .social_links {
+      font-size: 30px;
+      margin: 10px;
+   }
+
+
+   .social_links{ 
+      font-size: 30px;
+      margin: 10px;
+   
+   }
+
+   #socials_fb :hover{
+      color: blue;
+   }
+   #socials_insta :hover{
+      background: linear-gradient( #f9ce34,  #ee2a7b, #6228d7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      /* Add any other styles you need for the icon */
+   }
+   #socials_git:hover{
+      color: #878787;
+   }
+   #socials_linkedin:hover{
+      color: #0A66C2;
+   }
+
+
+   #pp{
+      width: 75px;
+      height: 75px;
+      border-radius: 50px;
+   }
+
+   #First_Page{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+
+   }
+   .flex h3{
+      font-family:sans-serif;
+      font-size: 18px;
+   }
+
+   #Right_Content{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      height: 100vh;
+      width: 70%;
+      padding: 2%;
+
+   }
+
+   #context{
+      border-left: 8px black solid   ;
+      border-radius: 20px;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      flex: 2;
+      padding: 2%;
+
+   }
+   #context h1{
+      font-size: 50px;
+      font-weight: 1000;
+   }
+   #context h2{
+      font-size: 25px;
+      font-weight: 700;
+   }
+   #context span{
+      font-size: 15px;
+      font-weight: 500;
+   }
+
+   #context p{
+      font-size: 15px;
+      font-weight: 500;
+   }
+   #context_pic{
+      display: flex;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      flex: 1.5;
+   }
+   #context_pic img{
+      width: 100%;
+   }
+   #my_qualities {
+   font-size: 15px;
+
+   }
+
+   #my_qualities  li{
+      display: inline-block;
+
+      width: 250px;
+      height: 40px;
+      margin: 3px;        
+      padding: 1.5%;
+      background-color: rgb(53, 53, 53);
+      color: rgb(255, 255, 255);
+      border-radius: 8px;
+
+   }
+   #my_qualities  li i{
+
+      background-color: white;
+      padding: 2.5%;
+      border-radius: 20px;
+      margin-right: 1%;
+   }
+
+
+   #Navigation{
+
+   
+      
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 100%;
+      z-index: 999; /* Ensure navigation stays on top */
+
+   }
+   .navlogo{
+      display: flex;
+      width: 30%;
+
+
+   }
+   nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+   }
+   nav li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+   }
+   nav li .active{
+      color: black;
+      font-size: 40px;
+      font-weight: 800;
+   }
+
+   nav li:hover{
+      color: grey;
+   }
+
+
+
+
+   #Second_Page{
+
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+
+
+      
+
+   
+   }
+   #second_RC{
+
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      overflow: hidden;
+      height: 90vh;
+      background-color: rgb(196, 196, 196);
+      border-radius: 20px;
+      font-size: 12px;
+   }
+
+.hover-opacity {
+  transition: opacity 0.3s ease;
+}
+
+.hover-opacity:hover {
+  opacity: 0.7; /* Adjust this value as needed */
+}
+
+   #lang_used{
+      margin-top: 4%;
+   }
+
+   #lang_used li{
+      display: inline-flex;
+      width: 100px;
+      border-radius: 20px;
+
+      margin: 2%;
+      padding: 2%;
+      padding-right: 4%;
+      background-color: #000000;
+      color: white;
+      font-size: 12px;
+   }
+   #lang_used i{
+      background-color: white;
+      
+      border-radius: 50px;
+      padding: 5%;
+
+      margin-right: 5%;
+   }
+   #Third_Page{
+
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      
+
+
+   }
+
+
+
+
+
