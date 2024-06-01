@@ -5,7 +5,7 @@ import "./firstpage_css.css";
 
 const Homepage = () => {
     const [currentWord, setCurrentWord] = useState("");
-    const words = ["Full Stack Developer", "Software Developer", "UI/UX Developer", "Front End Developer"];
+    const words = ["Front End Designer","Front End Developer","Full Stack Developer", "Software Developer", "UI/UX Designer" ];
     let i = 0;
     let timer;
   

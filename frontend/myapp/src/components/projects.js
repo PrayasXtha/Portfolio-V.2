@@ -29,11 +29,11 @@ const Projects = () => {
        </a>
        <ul id="lang_used">
 
-<li><i class="fa-brands fa-react"  style={{color: "#74C0FC",}}></i>React</li> 
-<li><i class="fa-solid fa-database" style={{color: "green",}}></i> MongoDB</li>
-<li><i class="fa-brands fa-js" style={{color: "#FFD43B",}}></i> JavaScript</li>
-<li><i class="fa-brands fa-html5" style={{color: "#ff822e",}}></i>HTML</li>
-<li><i class="fa-brands fa-css3-alt" style={{color: "#0082e6",}}></i> CSS</li>
+      <li><i class="fa-brands fa-react"  style={{color: "#74C0FC",}}></i>React</li> 
+      <li><i class="fa-solid fa-database" style={{color: "green",}}></i> MongoDB</li>
+      <li><i class="fa-brands fa-js" style={{color: "#FFD43B",}}></i> JavaScript</li>
+      <li><i class="fa-brands fa-html5" style={{color: "#ff822e",}}></i>HTML</li>
+      <li><i class="fa-brands fa-css3-alt" style={{color: "#0082e6",}}></i> CSS</li>
 
 </ul>
       </div>
@@ -82,13 +82,12 @@ const Projects = () => {
         <h2 class="text-base font-medium title-font text-gray-900 mt-5"> Personal Portifolio Template</h2>
         <p class="text-sm leading-relaxed mt-2">This portfolio template showcases my experience in developing innovative software solutions and my proficiency in a variety of programming languages and technologies.</p>
       </a>
+      
       <ul id="lang_used">
 
-
-
-<li><i class="fa-brands fa-js" style={{color: "#FFD43B",}}></i> JavaScript</li>
-<li><i class="fa-brands fa-html5" style={{color: "#ff822e",}}></i>HTML</li>
-<li><i class="fa-brands fa-css3-alt" style={{color: "#0082e6",}}></i> CSS</li>
+      <li><i class="fa-brands fa-js" style={{color: "#FFD43B",}}></i> JavaScript</li>
+      <li><i class="fa-brands fa-html5" style={{color: "#ff822e",}}></i>HTML</li>
+      <li><i class="fa-brands fa-css3-alt" style={{color: "#0082e6",}}></i> CSS</li>
 
 </ul>
       </div>

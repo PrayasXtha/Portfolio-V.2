@@ -31,10 +31,16 @@ const Navigation = () => {
           <Link to="First_Page" activeClass="active" spy={true} smooth={true} duration={100 } onSetActive={() => setActivePage('Home')}>Home</Link>
         </li>
         <li>
-          <Link to="Second_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Projects')}>Projects</Link>
+          <Link to="Second_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Projects')}>My Projects</Link>
         </li>
         <li>
-          <Link to="Third_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Start A Project')}>Start A Project</Link>
+          <Link to="Third_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Services')}>Services</Link>
+        </li>
+        <li>
+          <Link to="Fourth_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Skills')}>Skills</Link>
+        </li>
+        <li>
+          <Link to="Fifth_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Start A Project')}>Start A Project</Link>
         </li>
       </ul>
    
