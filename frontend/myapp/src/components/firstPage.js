@@ -46,7 +46,7 @@ function FirstPage() {
         <span class="ml-3 text-xl">Prayas Shrestha</span>
       </a>
       <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2024 Dev/Design - P.S
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"> <u>Thank you for visiting my website!</u></a>
+        <a href="https://tenor.com/en-GB/view/bow-bowing-michael-scott-steve-carell-the-office-gif-1242852755589233352" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"> <u>Thank you for visiting my website!</u></a>
       </p>
     
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start" id="social_footer">

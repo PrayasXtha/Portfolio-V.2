@@ -17,7 +17,10 @@ const Projects = () => {
    
     </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 py-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="600"
+     data-aos-offset="0">
         <a className='hover-opacity' href='https://edicehaven-shop.onrender.com/' target='blank'>
         <div class="rounded-lg h-64 overflow-hidden">
         
@@ -37,7 +40,10 @@ const Projects = () => {
 
 </ul>
       </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
         <a className='hover-opacity' href='https://edicehaven-shop.onrender.com/' target='blank'> 
 
         <div class="rounded-lg h-64 overflow-hidden">
@@ -71,7 +77,7 @@ const Projects = () => {
         </a>
         
       </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6"  >
       <a className='hover-opacity' href='https://prayasxtha.github.io/' target='blank'>
         <div class="rounded-lg h-64 overflow-hidden">
           <img 
@@ -89,7 +95,7 @@ const Projects = () => {
       <li><i class="fa-brands fa-html5" style={{color: "#ff822e",}}></i>HTML</li>
       <li><i class="fa-brands fa-css3-alt" style={{color: "#0082e6",}}></i> CSS</li>
 
-</ul>
+  </ul>
       </div>
     </div>
 
