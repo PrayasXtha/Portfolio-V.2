@@ -27,7 +27,7 @@ const Projects = () => {
           <img alt="content" class="object-cover object-center h-full w-full" src={dh}></img>
           
         </div>
-        <h2 class="text-base font-medium title-font text-gray-900 mt-5">Board Games Ecommerce App </h2>
+        <h2 class="text-base font-medium title-font text-gray-900 mt-5">Ecommerce Website</h2>
         <p class="text-sm leading-relaxed mt-2">We developed an e-commerce platform with a user-friendly interface and a wide selection of board games from classic to modern targeting every audience groups.</p>
        </a>
        <ul id="lang_used">
@@ -56,7 +56,7 @@ const Projects = () => {
               />
             </a>
                 </div>
-                <h2 class="text-base font-medium title-font text-gray-900 mt-5">eLibrary (Using MERN Stack)</h2>
+                <h2 class="text-base font-medium title-font text-gray-900 mt-5">eLibrary </h2>
                 <p class="text-sm leading-relaxed mt-2">An basic eLibrary dedicated to providing fans of the popular manga and anime series "One Piece" with a centralized platform to sell and buy content related to the series.</p>
                 </a>
                 <ul id="lang_used">

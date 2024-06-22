@@ -4,6 +4,9 @@ import { Link } from "react-scroll";
 import navlogo11 from "../img/navlogo11.gif";
 import navlogo22 from "../img/navlogo22.gif";
 import navlogo33 from "../img/navlogo33.gif";
+import Services from "../img/services.gif";
+import Skills from "../img/skills.gif";
+
 const Navigation = () => {
   
   const [activePage, setActivePage] = useState('Home');
@@ -14,6 +17,10 @@ const Navigation = () => {
         return navlogo11;
       case 'Projects':
         return navlogo22;
+      case 'Services':
+        return Services;
+      case 'Skills':
+        return Skills;
       case 'Start A Project':
         return navlogo33;
       default:

@@ -78,6 +78,9 @@
    }
 
    #First_Page{
+      background-image: url(../../public/css/img/bg1111.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
       display: flex;
       justify-content: right;
       align-items: center;
@@ -93,6 +96,7 @@
    #Right_Content{
 
       display: flex;
+      
       justify-content: center;
       align-items: center;  
       height: auto;
@@ -223,6 +227,9 @@
 
    #second_RC{
       width: 100%;
+      background-image: url(../../public/css/img/bg11.jpg);
+      background-repeat: no-repeat;
+      background-size: cover ;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
@@ -275,7 +282,9 @@
       align-items: center;
       width: 100%;
       height: auto;
-      background-color: #999999;
+      background-image: url(../../public/css/img/bg111.jpg);
+      background-repeat: no-repeat;
+      background-size: cover ;
       padding: 2%;
    }
  
