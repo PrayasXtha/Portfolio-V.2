@@ -1,11 +1,37 @@
+   
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
    *{
+       font-family: "Montserrat", sans-serif;
       margin: 0%;
       box-sizing: border-box;
       scroll-behavior: smooth;
 
    }
+   #hide{
+      display: none;
+   }
+   #myBtn {
+    
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: rgb(0, 0, 0); /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      border-radius: 10px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+    }
 
-
+    
+    #myBtn:hover + .hide{
+      display: block;
+      background-color: #555; /* Add a dark-grey background on hover */
+    }
+ 
    #social {
    position: fixed;
    display: flex;
@@ -78,7 +104,7 @@
    }
 
    #First_Page{
-      background-image: url(../../public/css/img/bg1111.jpg);
+      background-image: url(../../public/css/img/bg-100.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -216,6 +242,9 @@
 
 
    #Second_Page{
+      background-image: url(../../public/css/img/bg-10012.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
 
       display: flex;
       justify-content: right;
@@ -227,10 +256,7 @@
 
    #second_RC{
       width: 100%;
-      background-image: url(../../public/css/img/bg11.jpg);
-      background-repeat: no-repeat;
-      background-size: cover ;
-      box-sizing: border-box;
+      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -238,9 +264,9 @@
       padding: 20px;
       overflow: hidden;
       height: auto;
-      background-color: rgb(196, 196, 196);
+      background-color: rgba(175, 175, 175, 0.604);
       border-radius: 20px;
-      font-size: 12px;
+  
    }
 
 .hover-opacity {
@@ -301,7 +327,9 @@
    }
  
    #Fourth_Page{
-
+      background-image: url(../../public/css/img/bg-100.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
       display: flex;
       justify-content: right;
       align-items: center;
@@ -311,7 +339,50 @@
 
 
    }
+
+   #fourth_RC{
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 150px;
+   }
+   .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+
+      padding: 10px;
+    }
+    .grid-item {
+      height: 100px;
+      width: 100px;
+
+      padding: 20px;
+     
+      text-align: center;
+    }
+   #exp_title { 
+      width: 80%;
+   } 
+   #exp_title p{
+      font-size: 15px;
+      margin-bottom: 20px;
+   }
+
+   #exp_title h2{
+      font-size: 22px;
+      font-weight: 900;
+   }
+
+
+
    #Fifth_Page{
+      background-image: url(../../public/css/img/bg-10012.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
 
       display: flex;
       justify-content: right;

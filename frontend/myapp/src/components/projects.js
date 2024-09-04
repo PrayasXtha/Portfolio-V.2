@@ -17,10 +17,10 @@ const Projects = () => {
    
     </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 py-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="600"
-     data-aos-offset="0">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6" 
+      data-aos="fade-right"
+   data-aos-duration="2500"
+     >
         <a className='hover-opacity' href='https://edicehaven-shop.onrender.com/' target='blank'>
         <div class="rounded-lg h-64 overflow-hidden">
         
@@ -40,10 +40,9 @@ const Projects = () => {
 
 </ul>
       </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="300"
-     data-aos-offset="0">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6" 
+    data-aos="fade-up"
+    data-aos-duration="2500">
         <a className='hover-opacity' href='https://edicehaven-shop.onrender.com/' target='blank'> 
 
         <div class="rounded-lg h-64 overflow-hidden">
@@ -70,14 +69,16 @@ const Projects = () => {
                 </ul>
           <br></br>
           
-        <a class="text-blue-500 inline-flex items-center mt-3" href='https://github.com/PrayasXtha?tab=repositories' target='blank'> More Projects
+        <a class="text-grey-900 inline-flex items-center mt-3" href='https://github.com/PrayasXtha?tab=repositories' target='blank'> <b><ul>More Projects</ul></b> 
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </a>
         
       </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6"  >
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6" 
+      
+      >
       <a className='hover-opacity' href='https://prayasxtha.github.io/' target='blank'>
         <div class="rounded-lg h-64 overflow-hidden">
           <img 

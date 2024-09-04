@@ -14,7 +14,7 @@ const services = () => {
     <img class="h-40 rounded w-full object-cover object-center mb-6" src="../../css/img/webdesign.gif" alt="content"></img>
 
     <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Web Design</h2>
-    <p class="leading-relaxed text-base">Design your website from idea to a high fidelity mockup to standout in higly competitive market.</p>
+    <p class="leading-relaxed text-base">Design your website from idea to a high fidelity mockup to standout in higly competitive market throughout the world.</p>
   </div>
 </div>
 <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="fade-right"

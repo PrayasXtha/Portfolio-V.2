@@ -18,7 +18,9 @@ function FirstPage() {
   return (
     
     <div>
-      
+
+      <button  id="myBtn" title="Downlaod My Resume"> <i class="fa fa-download"></i> <p id="hide"> RESUME</p></button>
+
        <Social />
 
        <Nav/>
@@ -43,7 +45,7 @@ function FirstPage() {
       <a href="index.html">
           <img src="../../css/img/prayassocials.jpg" alt="" id="pp" />
         </a>
-        <span class="ml-3 text-xl">Prayas Shrestha</span>
+        <span class="ml-3 text-xl md:hidden lg:block">Prayas Shrestha</span>
       </a>
       <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2024 Dev/Design - P.S
         <a href="https://tenor.com/en-GB/view/bow-bowing-michael-scott-steve-carell-the-office-gif-1242852755589233352" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"> <u>Thank you for visiting my website!</u></a>
@@ -65,9 +67,7 @@ function FirstPage() {
           <i className="fa-brands fa-linkedin"></i>
         </a>
       </span>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start p-2">
-      <button class="btn"><i class="fa fa-download"></i> Download My Resume </button>
-      </span>
+      
     </div>
   </div>
       </footer>

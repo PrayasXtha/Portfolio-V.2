@@ -65,9 +65,9 @@ const Homepage = () => {
             data-aos-offset="300"
             data-aos-duration="1500"
             data-aos-easing="ease-in-sine">
-            <h2>Hello World,
+            <h2>Hi, I am
 
-            </h2> <h1>  Prayas Shrestha</h1>
+            </h2> <h1>  PRAYAS SHRESTHA</h1>
 
             <div className="flex">
                 <h3 className="header-sub-title">{currentWord}</h3>
