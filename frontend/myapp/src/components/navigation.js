@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import "./firstpage_css.css";
 import { Link } from "react-scroll";
 import navlogo11 from "../img/navlogo11.gif";
@@ -8,8 +8,8 @@ import Services from "../img/services.gif";
 import Skills from "../img/skills.gif";
 
 const Navigation = () => {
-  
   const [activePage, setActivePage] = useState('Home');
+  const [menuActive, setMenuActive] = useState(false); // State to toggle the menu
 
   const getImageForPage = () => {
     switch (activePage) {
@@ -28,31 +28,74 @@ const Navigation = () => {
     }
   };
 
-  return (    
+  const [showTopButton, setShowTopButton] = useState(false);
 
-    <nav id="Navigation">
-        
+  // Function to scroll to the top of the page
+  const topFunction = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  // Show or hide the top button based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowTopButton(true);
+      } else {
+        setShowTopButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
+  const closeMenu = () => {
+    setMenuActive(false); // Close the menu
+  };
+
+  const handleNavClick = (page) => {
+    setActivePage(page);
+    closeMenu(); // Close the menu after a link is clicked
+  };
+
+  return (
+    <nav id="Navigation" className={`off-screen-menu ${menuActive ? 'active' : ''}`}>
       <img className='navlogo' alt="ecommerce" src={getImageForPage()} />
-      <ul>
-        <li>                                                                                           
-          <Link to="First_Page" activeClass="active" spy={true} smooth={true} duration={100 } onSetActive={() => setActivePage('Home')}>Home</Link>
+      <ul className={menuActive ? 'menu-open' : ''}>
+        <li>
+          <Link to="First_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => handleNavClick('Home')}>Home</Link>
         </li>
         <li>
-          <Link to="Second_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Projects')}>My Projects</Link>
+          <Link to="Second_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => handleNavClick('Projects')}>My Projects</Link>
         </li>
         <li>
-          <Link to="Third_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Services')}>Passion</Link>
+          <Link to="Third_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => handleNavClick('Services')}>Passion</Link>
         </li>
         <li>
-          <Link to="Fourth_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Skills')}>Experience</Link>
+          <Link to="Fourth_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => handleNavClick('Skills')}>Experience</Link>
         </li>
         <li>
-          <Link to="Fifth_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => setActivePage('Start A Project')}>Start A Project</Link>
+          <Link to="Fifth_Page" activeClass="active" spy={true} smooth={true} duration={100} onSetActive={() => handleNavClick('Start A Project')}>Start A Project</Link>
         </li>
       </ul>
-   
-    </nav>   
 
+      {/* Hamburger menu for navigation */}
+        {showTopButton && (
+      <div className={`ham-menu ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+        )}
+    </nav>
   );
 };
 

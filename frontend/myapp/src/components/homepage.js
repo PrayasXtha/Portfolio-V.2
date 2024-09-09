@@ -61,7 +61,7 @@ const Homepage = () => {
        <div id="Right_Content">
 
                         
-            <div id="context" data-aos="fade-right"
+            <div id="context" data-aos="fade-right" 
             data-aos-offset="300"
             data-aos-duration="1500"
             data-aos-easing="ease-in-sine">
@@ -80,7 +80,7 @@ const Homepage = () => {
             <ul id="my_qualities">
 
             <li><i class="fa-solid fa-door-open" style={{color: "#d60000",}}></i> Open for Work</li>
-            <li><i class="fa-solid fa-user-secret" style={{color: "black",}}></i> Strong Technical Skills</li><br></br>
+            <li><i class="fa-solid fa-user-secret" style={{color: "black",}}></i> Strong Technical Skills</li>
             <li><i class="fa-solid fa-bolt" style={{color: "#FFD43B",}}></i> Adaptability</li>
             <li><i class="fa-solid fa-people-group" style={{color: "#74C0FC",}}></i>Team Player</li>
             <li><i class="fa-solid fa-brain"style={{color: "#e599c6",}}></i> Creativity and Innovation</li>

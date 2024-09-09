@@ -9,10 +9,10 @@ const contact = () => {
     <div id='second_RC' data-aos="fade-up" data-aos-duration="2000">
     
     <section class="text-gray-600 body-font relative">
-  <div class="container px-5 py-10 mx-auto">
+  <div class="container px-5 py-10 mx-auto sm:px-2 sm:py-2">
     <div class="flex flex-col text-center w-full mb-12">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" data-aos="fade-down" data-aos-duration="3000"><b>LETS GET IN TOUCH</b></h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Have a sweet project in mind or just want to say hi?<br></br> Feel free to send me a message!</p>
+      <h1 class="sm:text-xl text-2xl font-medium title-font mb-4 sm:mb-2 text-gray-900" data-aos="fade-down" data-aos-duration="3000"><b>LETS GET IN TOUCH</b></h1>
+      <p class="lg:w-2/3 sm:w-1/2 mx-auto leading-relaxed text-base">Have a sweet project in mind or just want to say hi?<br></br> Feel free to send me a message or email directly on <b>@prayasshrestha100@gmail.com</b> </p>
     </div>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
       <div class="flex flex-wrap -m-2">
@@ -35,7 +35,7 @@ const contact = () => {
           </div>
         </div>
         <div class="p-2 w-full">
-          <button data-aos="zoom-in" data-aos-duration="3000" class="flex mx-auto text-white bg-gray-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Connect</button>
+          <button data-aos="zoom-in" data-aos-duration="3000" class="flex mx-auto text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-blue-500 rounded text-lg">Connect</button>
         </div>
      
       </div>

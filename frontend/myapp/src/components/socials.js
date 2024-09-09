@@ -5,7 +5,7 @@ const Socials = () => {
   useEffect(() => {
     const handleScroll = () => {
       const social = document.getElementById('social');
-      if (window.scrollY > 500) { // Adjust this value as needed based on your page structure
+      if (window.scrollY > 100) { // Adjust this value as needed based on your page structure
         social.classList.add('scrolled');
       } else {
         social.classList.remove('scrolled');
