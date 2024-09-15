@@ -12,7 +12,7 @@ const contact = () => {
   <div class="container px-5 py-10 mx-auto sm:px-2 sm:py-2">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="sm:text-xl text-2xl font-medium title-font mb-4 sm:mb-2 text-gray-900" data-aos="fade-down" data-aos-duration="3000"><b>LETS GET IN TOUCH</b></h1>
-      <p class="lg:w-2/3 sm:w-1/2 mx-auto leading-relaxed text-base">Have a sweet project in mind or just want to say hi?<br></br> Feel free to send me a message or email directly on <b>@prayasshrestha100@gmail.com</b> </p>
+      <p class="lg:w-2/3 sm:w-1/2 mx-auto leading-relaxed text-base text-gray-800">Have a sweet project in mind or just want to say hi?<br></br> Feel free to send me a message or email directly on <b>@prayasshrestha100@gmail.com</b> </p>
     </div>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
       <div class="flex flex-wrap -m-2">

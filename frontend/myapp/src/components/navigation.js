@@ -9,7 +9,7 @@ import Skills from "../img/skills.gif";
 
 const Navigation = () => {
   const [activePage, setActivePage] = useState('Home');
-  const [menuActive, setMenuActive] = useState(false); // State to toggle the menu
+
 
   const getImageForPage = () => {
     switch (activePage) {
@@ -30,13 +30,6 @@ const Navigation = () => {
 
   const [showTopButton, setShowTopButton] = useState(false);
 
-  // Function to scroll to the top of the page
-  const topFunction = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   // Show or hide the top button based on scroll position
   useEffect(() => {
@@ -52,6 +45,8 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+  const [menuActive, setMenuActive] = useState(false); // State to toggle the menu
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
