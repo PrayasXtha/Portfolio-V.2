@@ -48,16 +48,16 @@
       z-index: 99; /* Make sure it does not overlap */
       border: none; /* Remove borders */
       outline: none; /* Remove outline */
-      background-color: rgb(0, 0, 0); /* Set a background color */
-      color: white; /* Text color */
+
+    
       cursor: pointer; /* Add a mouse pointer on hover */
       padding: 15px; /* Some padding */
       border-radius: 100px; /* Rounded corners */
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 50px;
-      height: 50px;
+      width: 100px;
+      height: 80px;
       font-size: 18px; /* Increase font size */
     }
 
@@ -488,6 +488,27 @@
    /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
   @media only screen and (max-width: 1450px) {
+   #myBtn {
+    
+      position: fixed; /* Fixed/sticky position */
+      bottom: 10px; /* Place the button at the bottom of the page */
+      right: 2px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+
+    
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      border-radius: 100px; /* Rounded corners */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 80px;
+      font-size: 18px; /* Increase font size */
+    }
+
    #myBtn2 {
     
       position: fixed; /* Fixed/sticky position */

@@ -93,7 +93,7 @@ const Projects = () => {
  
     </div>
 
-<Link class="text-grey-900 inline-flex items-center mt-3 hover:text-blue-500" to="/projects" > <b><ul>Check out My Projects</ul></b> 
+<Link class="text-gray-600 inline-flex items-center mt-3 hover:text-black" to="/projects" > <b><ul>Check out My Projects</ul></b> 
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>

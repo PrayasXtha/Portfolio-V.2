@@ -4,6 +4,7 @@ import Socials from "./socials";
 import Footer from "./footer";
 import { Link, useNavigate } from "react-router-dom";
 import { projectsTemp } from "../resource/projectsTemp";
+import ResumeUpButtons from "./resumeUpButtons.js";
 
 function ProjectPage() {
   const navigate = useNavigate();
@@ -13,7 +14,13 @@ function ProjectPage() {
   };
 
   return (
+
+
+
+
     <div id="projectPage">
+
+    <ResumeUpButtons/>
       {/* Back button */}
       <button
         className="text-grey-900 inline-flex items-center mt-3 hover:text-blue-500 sticky left-5 top-10 z-10"
@@ -132,14 +139,17 @@ function ProjectPage() {
               })}
           </div>
         </div>
-        <div className="rounded-lg h-64 w-full overflow-hidden bg-gray-300/60 flex flex-col sm:flex-row items-center justify-center">
-          <p className="text-2xl mr-2 p-5 ">
+        <div className=" h-64 w-full overflow-hidden  flex flex-col sm:flex-row items-center justify-center ">
+          <div className="w-5/6 h-full bg-gray-300/60 flex flex-col sm:flex-row items-center justify-center rounded">
+             <p className="text-2xl mr-2 p-5 ">
             More Projects Coming Soon....
           </p>
           <img
             src="../../css/img/loading.gif"
-            className="object-contain h-1/2 sm:h-1/3"
+            className="object-contain h-1/3 sm:h-1/2"
           />
+          </div>
+         
         </div>
       </section>
 

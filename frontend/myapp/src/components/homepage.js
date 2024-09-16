@@ -91,7 +91,7 @@ const Homepage = () => {
             </div>
 
                         
-            <div id="context_pic" data-aos="fade-up-left" >
+            <div id="context_pic" data-aos="fade-up-right" >
             <img alt="ecommerce"  src="../../css/img/pp.gif"></img>
             </div>
 
