@@ -1,6 +1,7 @@
 import React from 'react'
 import dh from '../img/diceheaven.png';
 import el from '../img/op.png'
+import { projectsTemp } from '../resource/projectsTemp';
 
 import { Link } from 'react-router-dom';
 
@@ -15,85 +16,30 @@ const Projects = () => {
 
 
   
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 py-4 sm:">
-    <div class="p-4 lg:w-1/3 md:w-1/2 sm:mb-0 mb-6" 
-      data-aos="fade-right"
-   data-aos-duration="2500"
-     >
+      {projectsTemp.slice().reverse().slice(0, 1).map ((projects) => (
 
-        <div class="rounded-lg h-64 overflow-hidden">
-        
-              <img alt="content" class="object-cover object-center h-full w-full" src='../../css/img/notion.png'></img>
-          
-        </div>
-        <h2 class="text-base font-medium title-font text-gray-900 mt-5">Notion Clone</h2>
-       
-
-       <ul id="lang_used">
-
-      <li><i class="fa-brands fa-react"  style={{color: "#74C0FC",}}></i>React</li> 
-      <li><i class="fa-solid fa-database" style={{color: "green",}}></i> Firebase</li>
-      <li><i class="fa-brands fa-js" style={{color: "#FFD43B",}}></i> JavaScript</li>
-      <li><i class="fa-brands fa-html5" style={{color: "#ff822e",}}></i>HTML</li>
-      <li><i class="fa-brands fa-css3-alt" style={{color: "#0082e6",}}></i> CSS</li>
-
-</ul>
-      </div>
-      <div class="p-4 lg:w-1/3 md:w-1/2 sm:mb-0 mb-6" 
-      data-aos="fade-right"
-   data-aos-duration="2500"
-     >
-
-        <div class="rounded-lg h-64 overflow-hidden">
-        
-          <img alt="content" class="object-cover object-center h-full w-full" src={dh}></img>
-          
-        </div>
-        <h2 class="text-base font-medium title-font text-gray-900 mt-5">Ecommerce Website</h2>
-
-       <ul id="lang_used">
-
-      <li><i class="fa-brands fa-react"  style={{color: "#74C0FC",}}></i>React</li> 
-      <li><i class="fa-solid fa-database" style={{color: "green",}}></i> MongoDB</li>
-      <li><i class="fa-brands fa-js" style={{color: "#FFD43B",}}></i> JavaScript</li>
-      <li><i class="fa-brands fa-html5" style={{color: "#ff822e",}}></i>HTML</li>
-      <li><i class="fa-brands fa-css3-alt" style={{color: "#0082e6",}}></i> CSS</li>
-
-</ul>
-      </div>
-      <div class="p-4 lg:w-1/3 sm:mb-0 mb-6 md:hidden lg:block" 
- >
-  
-
-        <div class="rounded-lg h-64 overflow-hidden">
-           
-              <img
-                alt="content"
-                className="project_img object-cover object-center h-full w-full "
-                src={el}
-              />
-    
-                </div>
-                <h2 class="text-base font-medium title-font text-gray-900 mt-5">eLibrary </h2>
-        
-                <ul id="lang_used">
-
-                <li><i class="fa-brands fa-react"  style={{color: "#74C0FC",}}></i>React</li>
-                <li><i class="fa-solid fa-database" style={{color: "green",}}></i> MongoDB</li>
-                <li><i class="fa-brands fa-js" style={{color: "#FFD43B",}}></i> JavaScript</li>
-                <li><i class="fa-brands fa-html5" style={{color: "#ff822e",}}></i>HTML</li>
-                <li><i class="fa-brands fa-css3-alt" style={{color: "#0082e6",}}></i> CSS</li>
-          
-                </ul>
-          <br></br>
-          
-      
-        
-      </div>
+<section class="text-gray-600 body-font">
+<span className='p-5 text-gray-800 font-bold'>LATEST PROJECT <i class="fa-solid fa-fire text-red-600"></i></span>
+<div class="container mx-auto flex px-5 py-16 md:flex-row sm:flex-col items-center">
  
-    </div>
+  <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+    <img class="object-cover object-center rounded" alt="hero" src={projects.projectImg}/>
+  </div>
+  <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{projects.projectTitle}
 
-<Link class="text-gray-600 inline-flex items-center mt-3 hover:text-black" to="/projects" > <b><ul>Check out My Projects</ul></b> 
+    </h1>
+    <p class="mb-8 leading-relaxed">{projects.projectDes}</p>
+    <div class="flex justify-center">
+        <a href={projects.projectDemoLink}> <button class="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg" >Demo</button> </a> 
+        <a href={projects.projectGitLink}>  <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Code</button> </a> 
+    </div>
+  </div>
+</div>
+</section>
+      ))}
+
+<Link class="text-gray-600 inline-flex items-center mt-3 hover:text-black" to="/projects" > <b><ul>Check out My Other Projects</ul></b> 
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>

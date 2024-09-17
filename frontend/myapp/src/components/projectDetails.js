@@ -116,7 +116,7 @@ function ProjectDetails() {
 
             <div className="flex flex-col sm:flex-row justify-center items-center w-full">
               <div className="bg-gray-200/50 p-7 rounded-lg sm:w-2/3 leading-relaxed text-black">
-                <h1 className="text-black-900 font-bold">ABOUT</h1>
+                <h1 className="text-black-900 font-bold">DESCRIPTION</h1>
                 <p>{project.projectFullDes}</p>
               </div>
 
