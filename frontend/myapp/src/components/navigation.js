@@ -46,6 +46,9 @@ const Navigation = () => {
   }, []);
 
 
+
+  //hamburgerMenu for mobile view
+
   const [menuActive, setMenuActive] = useState(false); // State to toggle the menu
 
   const toggleMenu = () => {

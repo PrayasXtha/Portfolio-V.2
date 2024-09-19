@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from "react";
 import "./firstpage_css.css";
 
+import {useSelector} from 'react-redux';
+
+import { Link } from "react-scroll";
+
 const Homepage = () => {
+
+  //dynamic datas from database:
+
+  const { portfolioData } = useSelector((state) => state.root);
+
+  const { homes } = portfolioData;
+
+  const {aboutDes, openToWork , jobTitles} = homes;
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
   const [currentWord, setCurrentWord] = useState("");
-  const words = [
-    "Front End Designer",
-    "Front End Developer",
-    "Full Stack Developer",
-    "Software Developer",
-    "UI/UX Designer",
-  ];
+  const words = jobTitles;
   let i = 0;
   let timer;
 
@@ -60,6 +70,7 @@ const Homepage = () => {
     loopDeleting();
   }
 
+
   return (
     <div>
       <section id="First_Page">
@@ -77,21 +88,19 @@ const Homepage = () => {
               <h3 className="header-sub-title blink">|</h3>
             </div>
             <p>
-              I am a detail-oriented software developer with a passion for
-              creating applications that can help people in need, regardless of
-              their age, education level, or background. My ultimate goal is to
-              design and develop an application that solves real-world problems
-              and makes a positive impact on society.
+              {aboutDes || ''}
             </p>
             <br></br>
             <ul id="my_qualities">
-              <li>
+            <Link to="Fifth_Page">
+              <li id={ openToWork === "Open for Work" ? "otw" : "none"}>
                 <i
                   class="fa-solid fa-door-open"
-                  style={{ color: "#d60000" }}
+                  style={{ color: openToWork === "Open for Work" ? "green" : "red" }}
                 ></i>{" "}
-                Open for Work
-              </li>
+               
+                    {openToWork} 
+              </li></Link>
               <li>
                 <i
                   class="fa-solid fa-user-secret"
