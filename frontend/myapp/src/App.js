@@ -23,7 +23,7 @@ function App() {
     try {
       dispatch(ShowLoading(true));
       const response = await axios.get(
-        "http://localhost:5000/api/portofolio/get-portofolio-data"
+        "https://portfolio-v-2-backend.vercel.app/api/portofolio/get-portofolio-data"
       );
       dispatch(SetPortfolioData(response.data));
       dispatch(HideLoading(true));
