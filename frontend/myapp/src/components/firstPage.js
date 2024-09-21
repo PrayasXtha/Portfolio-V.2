@@ -12,11 +12,14 @@ import Contact from "./contact.js";
 import Footer from "./footer.js";
 import ResumeUpButtons from "./resumeUpButtons.js";
 
+
 import { useSelector } from "react-redux";
 
 import { useLocation, useNavigate } from "react-router-dom"; // Import useLocation
 
 function FirstPage() {
+
+
   const projectsRef = useRef(null); // Ref for the Projects section
   const location = useLocation(); // Hook to access location and passed state
   const navigate = useNavigate(); // For modifying the history
@@ -30,7 +33,7 @@ function FirstPage() {
 
   // Detect if state is passed and scroll to the Projects section
   useEffect(() => {
-    if (location.state?.scrollToProjects) {
+    if (location.state?.scrollToProjects  && location.key !== "default") {
       scrollToProjects();
 
       // After scrolling, clear the scrollToProjects state to prevent scrolling on page refresh
@@ -42,14 +45,15 @@ function FirstPage() {
 
   return (
     <div>
-      <ResumeUpButtons />
+     
+      
+      {portfolioData && (
+        <>
+         <ResumeUpButtons />
 
       <Social />
 
       <Nav />
-      
-      {portfolioData && (
-        <>
           <Home />
 
           <div ref={projectsRef}>

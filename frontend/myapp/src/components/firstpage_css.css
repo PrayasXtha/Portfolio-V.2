@@ -8,6 +8,29 @@
 
    }
 
+   /* loader blinker */
+      .blink-class{
+         animation: blink 1s linear infinite;
+      }
+      #loader{
+         background-image: url(../../public/css/img/bg-100.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
+   @keyframes blink {
+      25%{
+         opacity:0.5;
+      }
+      50%{
+         opacity:0;
+      }
+      75%{
+         opacity:0.5;
+      }
+   
+
+   }
 ::selection {
    color: rgb(204, 204, 204);
    background: rgb(61, 61, 61);

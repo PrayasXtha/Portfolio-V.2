@@ -3,41 +3,45 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FirstPage from "../src/components/firstPage";
 import ProjectPage from "./components/projectPage";
 import ProjectDetails from "./components/projectDetails";
-import './App.css';
+import "./App.css";
 import Loader from "./components/loader";
 
 import { useState } from "react";
 import { useEffect } from "react";
-import axios from 'axios';
-import { useDispatch, useSelector } from "react-redux";
-import { SetPortfolioData } from "./redux/rootSlice";
 
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { HideLoading, SetPortfolioData, ShowLoading } from "./redux/rootSlice";
 
 function App() {
- const {loading, portfolioData} = useSelector((state) => state.root);
-  const dispatch = useDispatch();//new
+  const { loading, portfolioData } = useSelector((state) => state.root);
 
-  const getPortfolioData = async() => { //new
+  const dispatch = useDispatch(); //new
+
+  const getPortfolioData = async () => {
+    //new
     try {
-      const response = await axios.get('http://localhost:5000/api/portofolio/get-portofolio-data');
+      dispatch(ShowLoading(true));
+      const response = await axios.get(
+        "http://localhost:5000/api/portofolio/get-portofolio-data"
+      );
       dispatch(SetPortfolioData(response.data));
+      dispatch(HideLoading(true));
     } catch (error) {
-      console.log(error)
+      dispatch(HideLoading(true));
+      console.log(error);
     }
-  }
-
-  useEffect(()=> {//new
-    getPortfolioData();
-
-  },[])
+  };
 
   useEffect(() => {
-    console.log(portfolioData);
+    if (!portfolioData) {
+      getPortfolioData();
+    }
   }, [portfolioData]);
 
   return (
     <Router>
-      {loading ? <Loader/> : null}
+      {loading ? <Loader /> : null}
       <Routes>
         <Route path="/" element={<FirstPage />} />
         <Route path="/projects" element={<ProjectPage />} />

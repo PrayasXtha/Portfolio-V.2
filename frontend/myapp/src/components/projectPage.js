@@ -1,4 +1,5 @@
-import React from "react";
+import React   from "react";
+
 import pp from "../img/project_pp.png";
 import Socials from "./socials";
 import Footer from "./footer";
@@ -6,13 +7,28 @@ import { Link, useNavigate } from "react-router-dom";
 import { projectsTemp } from "../resource/projectsTemp";
 import ResumeUpButtons from "./resumeUpButtons.js";
 
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
+
 function ProjectPage() {
   const navigate = useNavigate();
 
   const handleBackClick = () => {
     navigate("/", { state: { scrollToProjects: true } }); // Pass scrollToProjects state
+    
   };
 
+  //dynamic Data
+  const { portfolioData } = useSelector((state) => state.root) || {};
+  const projects = portfolioData?.projects || [];
+  const myprojectsdes = portfolioData?.myprojectsdes || "";
+  
+   // Scroll to top when the component is mounted
+   useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []); // Empty dependency array ensures this runs only on component mount
+
+  
   return (
 
 
@@ -99,17 +115,13 @@ function ProjectPage() {
                 MY PROJECTS
               </h1>
               <p className="bg-gray-200/50 p-5  rounded-lg sm:w-3/5 leading-relaxed text-black">
-                As a Frontend Web Developer, my projects focus on creating
-                intuitive, responsive, and accessible user interfaces using
-                modern web technologies. Each project showcases my ability to
-                design and implement pixel-perfect UIs that enhance user
-                experience while optimizing performance.
+                  {myprojectsdes.projectmyDes}
               </p>
             </div>
           </div>
 
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            {projectsTemp
+            {projects
               .slice() // Create a copy of the array
               .reverse() // Reverse the array
               .map((project) => {

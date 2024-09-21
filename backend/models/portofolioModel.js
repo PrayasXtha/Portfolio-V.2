@@ -14,7 +14,14 @@ const homeSchema = new mongoose.Schema({
   }
 });
 
+const myProjectDesSchema = new mongoose.Schema({
+  projectmyDes: {
+    type: String,
+    required: true,
+  },
+})
 const projectSchema = new mongoose.Schema({
+
   projectYear: {
     type: String,
     required: true,
@@ -91,6 +98,21 @@ const experienceShema = new mongoose.Schema({
       },
 })
 
+const langexperienceSchema = new mongoose.Schema ({
+  langDes:{
+    type: String,
+    required: true,
+  },
+  langTitle: {
+    type: String,
+    required: true,
+  },
+  langImg: {
+    type: Array,
+    required: true,
+  },
+})
+
 const contactSchema = new mongoose.Schema({
   contactTitle: {
     type: String,
@@ -109,9 +131,13 @@ const contactSchema = new mongoose.Schema({
 
 module.exports = {
     Home: mongoose.model("homes", homeSchema),
+
+    Myproject: mongoose.model("myprojectdes", myProjectDesSchema),
     Project: mongoose.model("projects", projectSchema),
     Service: mongoose.model("services", servicesSchema),
     Skill: mongoose.model("skills", skillsSchema),
     Experience: mongoose.model("experiences", experienceShema),
+    Langexperience: mongoose.model("langexperiences", langexperienceSchema),
+
     Contact: mongoose.model("contacts", contactSchema),
 }

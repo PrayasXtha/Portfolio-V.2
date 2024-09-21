@@ -14,6 +14,12 @@ const home = [
 ];
 
 
+const myprojectsdes = [
+  {
+    projectmyDes: "As a Frontend Web Developer, my projects focus on creating intuitive, responsive, and accessible user interfaces using modern web technologies. Each project showcases my ability to design and implement pixel-perfect UIs that enhance user experience while optimizing performance."
+
+  }]
+
 const projects = [
   {
  
@@ -148,6 +154,17 @@ const expereinces =[{
     experienceDes : "With 3 years of experience in web development, I am continuously driven to expand my knowledge and adapt to the dynamic demands of this rapidly evolving industry."
 }];
 
+
+const langexperience = [{
+  langDes: "With 3 years of experience in web development, I am continuously driven to expand my knowledge and adapt to the dynamic demands of this rapidly evolving industry.",
+  langTitle: "Some technologies I've worked with:",
+  langImg: ["../../css/img/html.png","../../css/img/css.png","../../css/img/js.png","../../css/img/py.png","../../css/img/typescript.png",
+    "../../css/img/firebase.png","../../css/img/mongo.png","../../css/img/express.png","../../css/img/react.png","../../css/img/node.png",
+    "../../css/img/sql.png","../../css/img/gtihub.png","../../css/img/figma.png","../../css/img/java.svg","../../css/img/c.png",
+
+    
+  ],
+}]
 
 const contact = [{
     contactTitle: "LETS GET IN TOUCH",

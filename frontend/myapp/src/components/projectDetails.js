@@ -3,20 +3,40 @@ import { useParams, useNavigate } from "react-router-dom";
 import Footer from "./footer";
 import { projectsTemp } from "../resource/projectsTemp";
 import ResumeUpButtons from "./resumeUpButtons";
+import { useEffect } from "react";
 
+import { useSelector } from "react-redux";
 
 function ProjectDetails() {
+
+    //dynamic Data
+    const { portfolioData } = useSelector((state) => state.root);
+    const {projects} = portfolioData;
+
+    
   const { id } = useParams(); // Get the project ID from the URL
-  const project = projectsTemp.find((project) => project._id === id); // Find the project by ID
+  const project = projects.find((project) => project._id === id); // Find the project by ID
+  
   const navigate = useNavigate();
 
   const handleBackClick = () => {
     navigate("/projects"); // Navigate back to projects page
   };
 
+    // Scroll to top when the component is mounted
+    useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []); // Empty dependency array ensures this runs only on component mount
+  
+
   if (!project) {
     return <p>Project not found.</p>;
   }
+
+
+  
+
+
 
   return (
     <div id="projectPage">
