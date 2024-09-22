@@ -109,7 +109,7 @@ function ProjectDetails() {
         </a>
       </div>
       {/* Socials----------------------------------------------------------------------------------------------- */}
-
+      {portfolioData && (
       <section className="text-gray-600 body-font p-20 py-22">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col">
@@ -171,6 +171,7 @@ function ProjectDetails() {
           </div>
         </div>
       </section>
+      )}
       <Footer />
     </div>
   );
