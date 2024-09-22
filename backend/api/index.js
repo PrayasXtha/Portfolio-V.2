@@ -1,16 +1,19 @@
-const express = require("express");
-const app = express();
+const express = require('express');
 const cors = require('cors');
+const app = express();
 
-require("dotenv").config();
-// Enable CORS for all routes
+require('dotenv').config();
 app.use(cors());
-const dbConfig = require("./Config/dbConfig");
-const portfolioRoute = require('./routes/portofolioRoute');
 
+// Import routes
+const dbConfig = require('../Config/dbConfig');
+const portfolioRoute = require('../routes/portofolioRoute');
+
+// Middleware for JSON body parsing
 app.use(express.json());
-app.use("/api/portofolio", portfolioRoute);
 
-app.listen(5000, () => console.log("Server ready on port 5000."));
+// Define your routes
+app.use('/api/portofolio', portfolioRoute);
 
+// Export the app
 module.exports = app;
