@@ -1,4 +1,4 @@
-import React   from "react";
+import React from "react";
 
 import pp from "../img/project_pp.png";
 import Socials from "./socials";
@@ -15,28 +15,21 @@ function ProjectPage() {
 
   const handleBackClick = () => {
     navigate("/", { state: { scrollToProjects: true } }); // Pass scrollToProjects state
-    
   };
 
   //dynamic Data
   const { portfolioData } = useSelector((state) => state.root) || {};
   const projects = portfolioData?.projects || [];
   const myprojectsdes = portfolioData?.myprojectsdes || "";
-  
-   // Scroll to top when the component is mounted
-   useEffect(() => {
+
+  // Scroll to top when the component is mounted
+  useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
   }, []); // Empty dependency array ensures this runs only on component mount
 
-  
   return (
-
-
-
-
     <div id="projectPage">
-
-    <ResumeUpButtons/>
+      <ResumeUpButtons />
       {/* Back button */}
       <button
         className="text-grey-900 inline-flex items-center mt-3 hover:text-blue-500 sticky left-5 top-10 z-10"
@@ -115,7 +108,7 @@ function ProjectPage() {
                 MY PROJECTS
               </h1>
               <p className="bg-gray-200/50 p-5  rounded-lg sm:w-3/5 leading-relaxed text-black">
-                  {myprojectsdes.projectmyDes}
+                {myprojectsdes.projectmyDes}
               </p>
             </div>
           </div>
@@ -129,7 +122,7 @@ function ProjectPage() {
                   <div
                     className="p-4 md:w-1/3 sm:mb-0 mb-6 "
                     key={project._id}
-                    data-aos="zoom-in"
+              
                   >
                     <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
                       {project.projectTitle}
@@ -153,15 +146,12 @@ function ProjectPage() {
         </div>
         <div className=" h-64 w-full overflow-hidden  flex flex-col sm:flex-row items-center justify-center ">
           <div className="w-5/6 h-full bg-gray-300/60 flex flex-col sm:flex-row items-center justify-center rounded">
-             <p className="text-2xl mr-2 p-5 ">
-            More Projects Coming Soon....
-          </p>
-          <img
-            src="../../css/img/loading.gif"
-            className="object-contain h-1/3 sm:h-1/2"
-          />
+            <p className="text-2xl mr-2 p-5 ">More Projects Coming Soon....</p>
+            <img
+              src="../../css/img/loading.gif"
+              className="object-contain h-1/3 sm:h-1/2"
+            />
           </div>
-         
         </div>
       </section>
 
