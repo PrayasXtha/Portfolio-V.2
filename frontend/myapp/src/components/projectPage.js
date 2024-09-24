@@ -46,14 +46,14 @@ function ProjectPage() {
         <a
           id="socials_fb"
           className="social_links"
-          href="https://www.facebook.com/prayas.shrestha.98"
+          href="https://www.youtube.com/@prayasinca162"
           target="_blank"
           data-aos="fade-down"
           data-aos-delay="50"
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
         >
-          <i className="fa-brands fa-facebook"></i>
+          <i className="fa-brands fa-youtube"></i>
         </a>
         <a
           id="socials_insta"
@@ -97,63 +97,64 @@ function ProjectPage() {
       </div>
       {/* Socials */}
       {portfolioData && (
-      <section className="text-gray-600 body-font p-20 py-22">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col">
-            <div className="h-1 bg-gray-200 rounded overflow-hidden">
-              <div className="w-24 h-full bg-black"></div>
+        <section className="text-gray-600 body-font p-20 py-22">
+          <div className="container px-5 py-24 mx-auto">
+            <div className="flex flex-col">
+              <div className="h-1 bg-gray-200 rounded overflow-hidden">
+                <div className="w-24 h-full bg-black"></div>
+              </div>
+              <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">
+                  MY PROJECTS
+                </h1>
+                <p className="bg-gray-200/50 p-5  rounded-lg sm:w-3/5 leading-relaxed text-black">
+                  {myprojectsdes.projectmyDes}
+                </p>
+              </div>
             </div>
-            <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">
-                MY PROJECTS
-              </h1>
-              <p className="bg-gray-200/50 p-5  rounded-lg sm:w-3/5 leading-relaxed text-black">
-                {myprojectsdes.projectmyDes}
-              </p>
-            </div>
-          </div>
 
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            {projects
-              .slice() // Create a copy of the array
-              .reverse() // Reverse the array
-              .map((project) => {
-                return (
-                  <div
-                    className="p-4 md:w-1/3 sm:mb-0 mb-6 "
-                    key={project._id}
-              
-                  >
-                    <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                      {project.projectTitle}
-                    </h2>
-                    <Link
-                      className="text-indigo-500 inline-flex items-center mt-3"
-                      to={`/projectsDetail/${project._id}`}
+            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+              {projects
+                .slice() // Create a copy of the array
+                .reverse() // Reverse the array
+                .map((project) => {
+                  return (
+                    <div
+                      className="p-4 md:w-1/3 sm:mb-0 mb-6 "
+                      key={project._id}
                     >
-                      <div className="rounded-lg h-64 overflow-hidden">
-                        <img
-                          alt="content"
-                          className="object-cover object-center h-full w-full  hover-opacity"
-                          src={project.projectImg}
-                        />
-                      </div>
-                    </Link>
-                  </div>
-                );
-              })}
+                      <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
+                        {project.projectTitle}
+                      </h2>
+                      <Link
+                        className="text-indigo-500 inline-flex items-center mt-3"
+                        to={`/projectsDetail/${project._id}`}
+                      >
+                        <div className="rounded-lg h-64 overflow-hidden">
+                          <img
+                            alt="content"
+                            className="object-cover object-center h-full w-full  hover-opacity"
+                            src={project.projectImg}
+                          />
+                        </div>
+                      </Link>
+                    </div>
+                  );
+                })}
+            </div>
           </div>
-        </div>
-        <div className=" h-64 w-full overflow-hidden  flex flex-col sm:flex-row items-center justify-center ">
-          <div className="w-5/6 h-full bg-gray-300/60 flex flex-col sm:flex-row items-center justify-center rounded">
-            <p className="text-2xl mr-2 p-5 ">More Projects Coming Soon....</p>
-            <img
-              src="../../css/img/loading.gif"
-              className="object-contain h-1/3 sm:h-1/2"
-            />
+          <div className=" h-64 w-full overflow-hidden  flex flex-col sm:flex-row items-center justify-center ">
+            <div className="w-5/6 h-full bg-gray-300/60 flex flex-col sm:flex-row items-center justify-center rounded">
+              <p className="text-2xl mr-2 p-5 ">
+                More Projects Coming Soon....
+              </p>
+              <img
+                src="../../css/img/loading.gif"
+                className="object-contain h-1/3 sm:h-1/2"
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       )}
 
       <Footer />

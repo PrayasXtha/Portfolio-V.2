@@ -85,22 +85,26 @@ const Homepage = () => {
             <h2>Hi, I am</h2> <h1> PRAYAS SHRESTHA</h1>
             <div className="flex">
               <h3 className="header-sub-title">{currentWord}</h3>
+              
               <h3 className="header-sub-title blink">|</h3>
             </div>
+     
             <p>
               {aboutDes || ''}
             </p>
             <br></br>
-            <ul id="my_qualities">
-            <Link to="Fifth_Page">
-              <li id={ openToWork === "Open for Work" ? "otw" : "none"}>
+
+            <Link to="Fifth_Page" id="my_qualitiess">
+              <li id={ openToWork === "Yes." ? "otw" : "none"} title="CLICK ME!" >
                 <i
                   class="fa-solid fa-door-open"
-                  style={{ color: openToWork === "Open for Work" ? "green" : "red" }}
+                  style={{ color: openToWork === "Yes." ? "green" : "red" }}
                 ></i>{" "}
                
-                    {openToWork} 
+                   <span>Am I Open For Opportunities? </span> <span  className=" otwAns">{openToWork}  </span>
               </li></Link>
+            <ul id="my_qualities">
+      
               <li>
                 <i
                   class="fa-solid fa-user-secret"
@@ -112,13 +116,7 @@ const Homepage = () => {
                 <i class="fa-solid fa-bolt" style={{ color: "#FFD43B" }}></i>{" "}
                 Adaptability
               </li>
-              <li>
-                <i
-                  class="fa-solid fa-people-group"
-                  style={{ color: "#74C0FC" }}
-                ></i>
-                Team Player
-              </li>
+        
               <li>
                 <i class="fa-solid fa-brain" style={{ color: "#e599c6" }}></i>{" "}
                 Creativity and Innovation

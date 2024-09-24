@@ -13,7 +13,7 @@
          animation: blink 1s linear infinite;
       }
       #loader{
-         background-image: url(../../public/css/img/bg-100.jpg);
+       
       background-repeat: no-repeat;
       background-size: cover;
       }
@@ -169,7 +169,7 @@
    }
 
    #socials_fb :hover{
-      color: blue;
+      color: red;
    }
    #socials_insta :hover{
       background: linear-gradient( #f9ce34,  #ee2a7b, #6228d7);
@@ -194,7 +194,7 @@
    }
 
    #First_Page{
-      background-image: url(../../public/css/img/bg-100.jpg);
+      background-image: url(../../public/css/img/bg-1001.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -212,7 +212,7 @@
    #Right_Content{
 
       display: flex;
-      
+
       justify-content: center;
       align-items: center;  
       height: auto;
@@ -222,7 +222,8 @@
    }
 
    #context{
-      border-left: 8px black solid   ;
+      
+
       border-radius: 20px;
       display: flex;
       text-align: left;
@@ -258,6 +259,7 @@
    #context_pic img{
       width: 100%;
    }
+
    #my_qualities {
    font-size: 15px;
 
@@ -270,7 +272,7 @@
       height: 40px;
       margin: 3px;        
       padding: 1.5%;
-      background-color: rgb(53, 53, 53);
+      background-color: rgb(68, 68, 68);
       color: rgb(255, 255, 255);
       border-radius: 8px;
 
@@ -283,6 +285,45 @@
       margin-right: 1%;
    }
 
+
+   #my_qualitiess {
+      font-size: 15px;
+     
+      }
+   
+      #my_qualitiess  li{
+         display: inline-block;
+   
+         width: 91.5%;
+         text-align: center;
+         height: 50px;
+         margin: 3px;        
+         padding: 1.5%;
+         background-color: rgb(222, 222, 222);
+         color: rgb(0, 0, 0);
+         border-radius: 8px;
+   
+      }
+      #my_qualitiess  li i{
+   
+         background-color: white;
+
+         padding: 2%;
+         border-radius: 20px;
+         margin-right: 1%;
+      }
+
+      .otwAns{
+display: none;
+
+      }
+      #my_qualitiess :hover{
+         color: rgb(255, 255, 255);
+      }
+      #my_qualitiess li:hover .otwAns{
+display: inline;
+color: rgb(255, 255, 255);
+      }
 
    #Navigation{
 
@@ -332,7 +373,7 @@
 
 
    #Second_Page{
-      background-image: url(../../public/css/img/bg-10012.jpg);
+      background-image: url(../../public/css/img/bg-10011.jpg);
       background-repeat: no-repeat;
       background-size: cover;
 
@@ -340,7 +381,7 @@
       justify-content: right;
       align-items: center;
       width: 100%;
-      height: auto;
+      height: 100vh;
 
    }
 
@@ -354,7 +395,7 @@
       padding: 20px;
       overflow: hidden;
       height: auto;
-      background-color: rgba(175, 175, 175, 0.604);
+      background-color: #dcdcdcc2;
       border-radius: 20px;
   
    }
@@ -391,13 +432,16 @@
 
       margin-right: 5%;
    }
+
+
+
    #Third_Page{
 
       display: flex;
       justify-content: right;
       align-items: center;
       width: 100%;
-      height: auto;
+      height: 100vh;
       background-image: url(../../public/css/img/bg111.jpg);
       background-repeat: no-repeat;
       background-size: cover ;
@@ -417,7 +461,7 @@
    }
  
    #Fourth_Page{
-      background-image: url(../../public/css/img/bg-100.jpg);
+      background-image: url(../../public/css/img/bg1111.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -477,7 +521,7 @@
 
 
    #Fifth_Page{
-      background-image: url(../../public/css/img/bg-10012.jpg);
+      background-image: url(../../public/css/img/bg-10011.jpg);
       background-repeat: no-repeat;
       background-size: cover;
 
@@ -527,6 +571,49 @@
    /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
   @media only screen and (max-width: 1450px) {
+   #my_qualitiess {
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      align-items: center;
+     
+      }
+   
+      #my_qualitiess  li{
+         display: inline-block;
+   
+         width: 61.5%;
+         text-align: center;
+         height: 55px;
+         margin: 3px; 
+         margin-bottom: 15px;       
+         padding: 1.5%;
+         background-color: rgb(222, 222, 222);
+         color: rgb(0, 0, 0);
+         border-radius: 8px;
+   
+      }
+      #my_qualitiess  li i{
+   
+         background-color: white;
+
+         padding: 2%;
+         border-radius: 20px;
+         margin-right: 1%;
+      }
+
+      .otwAns{
+display: none;
+
+      }
+      #my_qualitiess :hover{
+         color: rgb(255, 255, 255);
+      }
+      #my_qualitiess li:hover .otwAns{
+display: inline;
+color: rgb(255, 255, 255);
+      }
+
    #myBtn {
     
       position: fixed; /* Fixed/sticky position */
@@ -617,7 +704,7 @@
 
 
       #First_Page{
-         background-image: url(../../public/css/img/bg-100.jpg);
+         background-image: url(../../public/css/img/bg-1001.jpg);
          background-repeat: no-repeat;
          background-size: cover;
          display: flex;
@@ -637,12 +724,12 @@
       align-items: center;  
       height: auto;
       width: 80%;
-      margin-top: 12vh;
+      
       padding: 2%;
 
    }
       #context{
-         border-left: 4px black solid   ;
+         
          border-radius: 20px;
          display: flex;
          justify-content: center;
@@ -884,6 +971,51 @@
    }
 
    @media only screen and (max-width: 992px) {
+      #Third_Page{
+         height: auto;
+      }
+      #my_qualitiess {
+         display: flex;
+         justify-content: center;
+         font-size: 15px;
+         align-items: center;
+         margin-bottom: 15px;
+        
+         }
+      
+         #my_qualitiess  li{
+            display: inline-block;
+      
+            width: 100%;
+            text-align: center;
+            height: 50px;
+            margin: 3px;        
+            padding: 1.5%;
+            background-color: rgb(222, 222, 222);
+            color: rgb(0, 0, 0);
+            border-radius: 8px;
+      
+         }
+         #my_qualitiess  li i{
+      
+            background-color: white;
+   
+            padding: 2%;
+            border-radius: 20px;
+            margin-right: 1%;
+         }
+   
+         .otwAns{
+   display: none;
+   
+         }
+         #my_qualitiess :hover{
+            color: rgb(255, 255, 255);
+         }
+         #my_qualitiess li:hover .otwAns{
+   display: inline;
+   color: rgb(255, 255, 255);
+         }
       #myBtn2 {
     
          position: fixed; /* Fixed/sticky position */
@@ -954,7 +1086,7 @@
 
 
       #First_Page{
-         background-image: url(../../public/css/img/bg-100.jpg);
+         background-image: url(../../public/css/img/bg-1001.jpg);
          background-repeat: no-repeat;
          background-size: cover;
          display: flex;
@@ -965,7 +1097,9 @@
          height: auto;
    
       }
-      
+      #contentManager4{
+         background-color: #00000000;
+      }
    #Right_Content{
 
       display: flex;
@@ -974,15 +1108,15 @@
       align-items: center;  
       height: auto;
       width: 80%;
-      margin-top: 12vh;
+      margin-top: 5vh;
       padding: 2%;
 
    }
       #context{
 
       
-         background-color: #ffffff96;
-         border-left: 4px black solid   ;
+         background-color: #ffffff00;
+         border-left: 0px black solid   ;
          border-radius: 20px;
          display: flex;
          justify-content: center;
@@ -994,7 +1128,7 @@
    
       }
       #context h1{
-         font-size: 30px;
+         font-size: 40px;
          font-weight: 1000;
       }
       #context h2{
@@ -1095,7 +1229,7 @@
 
          
    #Second_Page{
-      background-image: url(../../public/css/img/bg-10012.jpg);
+      background-image: url(../../public/css/img/bg-10011.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     
@@ -1156,7 +1290,7 @@
    }
 
    #content_third{
-
+      
       width: 90%;
       height: 100%;
       padding: 16%;
@@ -1228,6 +1362,51 @@
 
 
    @media only screen and (max-width: 768px) {
+      #Third_Page{
+         height: auto;
+      }
+      #my_qualitiess {
+         display: flex;
+         justify-content: center;
+         font-size: 15px;
+         align-items: center;
+         margin-bottom: 15PX;
+        
+         }
+      
+         #my_qualitiess  li{
+            display: inline-block;
+      
+            width: 100%;
+            text-align: center;
+            height: 45px;
+            margin: 3px;        
+            padding: 1.5%;
+            background-color: rgb(222, 222, 222);
+            color: rgb(0, 0, 0);
+            border-radius: 8px;
+      
+         }
+         #my_qualitiess  li i{
+      
+            background-color: white;
+   
+            padding: 2%;
+            border-radius: 20px;
+            margin-right: 1%;
+         }
+   
+         .otwAns{
+   display: none;
+   
+         }
+         #my_qualitiess :hover{
+            color: rgb(255, 255, 255);
+         }
+         #my_qualitiess li:hover .otwAns{
+   display: inline;
+   color: rgb(255, 255, 255);
+         }
       #myBtn2 {
     
          position: fixed; /* Fixed/sticky position */
@@ -1295,6 +1474,9 @@
 
       }
       .ham-menu span:nth-child(1){
+         top: 50%;
+      }
+      .ham-menu span:nth-child(2){
          top: 25%;
       }
       .ham-menu span:nth-child(3){
@@ -1345,7 +1527,7 @@
 
 
       #First_Page{
-         background-image: url(../../public/css/img/bg-100.jpg);
+         background-image: url(../../public/css/img/bg-1001.jpg);
          background-repeat: no-repeat;
          background-size: cover;
          display: flex;
@@ -1370,12 +1552,12 @@
 
    }
       #context{
-    
-         border-left: 4px black solid   ;
+         background-color: #ffffff00;
+         border-left: 0px black solid   ;
          border-radius: 20px;
          display: flex;
          justify-content: center;
-        
+         background-color: none;
          text-align: left;
          flex-direction: column;
          flex: 2;
@@ -1383,11 +1565,11 @@
    
       }
       #context h1{
-         font-size: 30px;
+         font-size: 40px;
          font-weight: 1000;
       }
       #context h2{
-         font-size: 15px;
+         font-size: 20px;
          font-weight: 700;
       }
       #context span{
@@ -1685,6 +1867,9 @@
       .ham-menu span:nth-child(1){
          top: 25%;
       }
+      .ham-menu span:nth-child(2){
+         top: 50%;
+      }
       .ham-menu span:nth-child(3){
          top: 75%;
       }
@@ -1734,7 +1919,7 @@
 
       #First_Page{
          
-         background-image: url(../../public/css/img/bg-100.jpg);
+         background-image: url(../../public/css/img/bg-1001.jpg);
          background-repeat: no-repeat;
          background-size: fill;
          display: flex;
@@ -1756,12 +1941,12 @@
       align-items: center;  
       height: auto;
       width: 100%;
-      margin-top: 12vh;
+      margin-top: 10vh;
       padding: 0%;
 
    }
       #context{
-         border-left: 4px black solid   ;
+        
          border-radius: 20px;
          display: flex;
          justify-content: center;
@@ -1786,7 +1971,7 @@
       }
    
       #context p{
-         font-size: 15spx;
+         font-size: 15px;
          font-weight: 500;
       }
       #context_pic{
@@ -1828,6 +2013,49 @@
          margin-right: 1%;
       }
    
+      #my_qualitiess {
+         display: flex;
+         justify-content: center;
+         font-size: 15px;
+         align-items: center;
+        
+         }
+      
+         #my_qualitiess  li{
+            display: inline-block;
+      
+            width: 100%;
+            text-align: center;
+            height: 40px;
+            margin: 3px;        
+            padding: 1.5%;
+            background-color: rgb(222, 222, 222);
+            color: rgb(0, 0, 0);
+            border-radius: 8px;
+      
+         }
+         #my_qualitiess  li i{
+      
+            background-color: white;
+   
+            padding: 2%;
+            border-radius: 20px;
+            margin-right: 1%;
+         }
+   
+         .otwAns{
+   display: none;
+   
+         }
+         #my_qualitiess :hover{
+            color: rgb(255, 255, 255);
+         }
+         #my_qualitiess li:hover .otwAns{
+   display: inline;
+   color: rgb(255, 255, 255);
+         }
+
+
       #social {
          position: fixed;
          display: flex;
@@ -1933,7 +2161,9 @@
 
       margin-right: 5%;
    }
-
+   #Third_Page{
+      height: auto;
+   }
    #content_third{
 
       width: 100%;

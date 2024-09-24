@@ -22,8 +22,8 @@ const Socials = () => {
   return (
     <div>
       <div id="social">
-        <a id='socials_fb' className="social_links" href="https://www.facebook.com/prayas.shrestha.98" target="_blank" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out">
-          <i className="fa-brands fa-facebook"></i>
+        <a id='socials_fb' className="social_links" href="https://www.youtube.com/@prayasinca162" target="_blank" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500" data-aos-easing="ease-in-out">
+          <i className="fa-brands fa-youtube"></i>
         </a>
         <a id='socials_insta' className="social_links" href="https://www.instagram.com/iam_prayas/" target="_blank" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500" data-aos-easing="ease-in-out">
           <i className="fa-brands fa-instagram"></i>

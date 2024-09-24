@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import{useEffect} from 'react'
+
 
 const Projects = () => {
   // Dynamic data
@@ -9,10 +9,7 @@ const Projects = () => {
   const { projects } = portfolioData;
 
 
-   // Scroll to top when the component is mounted
-   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
-  }, []); // Empty dependency array ensures this runs only on component mount
+
 
   return (
     <section id="Second_Page">
@@ -39,7 +36,7 @@ const Projects = () => {
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                       {project.projectTitle}
                     </h1>
-                    <p className="mb-8 leading-relaxed">{project.projectDes}</p>
+                    <p className="mb-8 leading-relaxed text-gay-900">{project.projectDes}</p>
                     <div className="flex justify-center">
                       <a href={project.projectDemoLink} target="blank">
                         <button className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg">
